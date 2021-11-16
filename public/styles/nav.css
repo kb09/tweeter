@@ -1,46 +1,32 @@
 nav{
   height: 120px;
-
-
   background-color: #4056A1 ;
   width:100vw;
-
-  color:#FFFFFF ;
-
+  color:#FFFFFF ;  
 }
 
-#navID {
+#navID { 
   display: inline-flex;
   height: 60px;
   margin-top: 1.5em;
   margin-left:1.5em;
-  border: dotted;
   font-family:"Bungee";
-
-
 }
+
 #navArrow {
-    position: relative;
-    color: red;
-    margin-top: 75px;
-    float: right;
-    left: 150px;
-    border: dotted;
-    color: red;
-    float: right;
-    margin-right:1.5em ;
-
+  position: relative;
+  color: #ff0000;
+  margin-top: 3.2em; 
+  float: right;
+  margin-right: -7em;
+  margin-top: 3em;
 }
-#newTweet{
 
+#newTweet{
   position: relative;
   float: right;
-  margin-left: 2em;
+  margin-left: 3em;
   margin-top: 1.5em;
-  border: dotted; 
-  font-family: source sans pro;
-
-  
-  
-
+  padding-right: 1em;
+  font-family:"Source Sans Pro", sans-serif;
 }
