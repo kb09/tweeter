@@ -1,6 +1,7 @@
 .header {
   display: flex;
   height: 400px;
+  background-image: url(http://www.transparenttextures.com/patterns/foggy-birds.png);
   background-color: thistle;
   justify-content: center;
   flex-flow: column wrap;
