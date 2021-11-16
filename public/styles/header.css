@@ -1,31 +1,16 @@
-.header{
+.header {
   display: flex;
   height: 400px;
-  width: 100%;
   background-color: thistle;
-  border: solid red;
+  justify-content: center;
+  flex-flow: column wrap;
   align-items: center;
-  justify-content: center;
+  width: 100%
+}
+
+#name {
+  color: black;
+  font-weight: 200;
 
 }
 
-#avatar{
-  position: relative;
-  border: solid white;
-  justify-content: center;
-  background: coral;
-  margin-bottom: 5em;
-
-
-}
-
-#name{
-  border: solid green;
-  justify-content: center;
-  background: coral;
-  position: relative;
-  margin-top: 6em
-}
-/* 
-The name should be centered below the avatar
-The background-color should be a different colour than the nav and the body */
