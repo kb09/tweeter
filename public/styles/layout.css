@@ -22,6 +22,16 @@ body { /* adding imported fonts to body and logo*/
 
 }
 
+/* Setup the main container */
+
+.container{
+width: 90%;
+display: flex;
+justify-content: center;
+color: #545149;
+
+}
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
