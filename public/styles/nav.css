@@ -1,0 +1,47 @@
+nav{
+  height: 120px;
+
+
+  background-color: #4056A1 ;
+  width:100vw;
+  border:dotted;
+
+  color:#FFFFFF ;
+
+}
+
+#navID {
+  display: inline-flex;
+  height: 60px;
+  margin-top: 1.5em;
+  margin-left:1.5em;
+  border: dotted;
+  font-family:"Bungee";
+
+
+}
+#navArrow {
+    position: relative;
+    color: red;
+    margin-top: 75px;
+    float: right;
+    left: 150px;
+    border: dotted;
+    color: red;
+    float: right;
+    margin-right:1.5em ;
+
+}
+#newTweet{
+
+  position: relative;
+  float: right;
+  margin-left: 2em;
+  margin-top: 1.5em;
+  border: dotted; 
+  font-family: source sans pro;
+
+  
+  
+
+}
