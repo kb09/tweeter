@@ -1,34 +1,84 @@
 
 .all-tweets{
 position: absolute;
- border: 4px dotted orange;
  align-items: center;
  margin-top: 9em;
  width: 90%;
+ margin-bottom: 2em;
  
 }
 
 .all-tweets header {
-  display: flex;
+ display: flex;
   
  font-size: 20px;
-  margin: 0.5em;
-  display: flex;
-  
-justify-content: space-between;  
-  border: 4px solid blue;
+ margin: 0.5em; 
 }
 
- /* .all-tweets footer {
-  justify-content: space-between;  
-   padding: 2px;
-  margin-top: 0.25em;
-  margin-bottom: 0.25em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  border-top: solid;
+.all-tweets .name{
+  padding-left: 0 em;
+  color: #000000;
+  margin-top: 5em;
+}
+
+.all-tweets .userName{
+  float: right;
+  color: #e969a9;;
+  margin-top: 0em;
+  margin-left: 42em;
+
+}
+
+.all-tweets footer {
+  border-top: 2px solid #000000;
+  border-width: 70%;
+  margin-left: 4em;
+} 
+
+.tweet-info{
+  margin-left: 6.5em;
+  padding-bottom: 1em;
+  }
+
+.timestamp{
   display: flex;
+  margin-left: 5em;
+  font-size: small;
+  margin-top: 1em;
+  padding-bottom: 1em;
   
-  font-weight: 600; 
-  border: 4px solid cornflowerblue;
-}  */
+}
+
+.icons{
+  font-size: medium;
+  padding-left: 65em;
+  margin-top: -1.6em;
+  display: flex;
+  justify-content: space-between;
+
+  
+}
+.icons .flag{
+  color: #3550e6;
+  margin-right: .5em;
+}
+.icons .retweet{
+  color: #3550e6;
+  margin-right: .5em;
+}
+.icons .heart{
+  color: #3550e6;
+  margin-right: .5em;
+}
+.icons .flag:hover{
+  color: #e6c50fc9;
+  margin-right: .5em;
+}
+.icons .retweet:hover{
+  color: #e6c50fc9;
+  margin-right: .5em;
+}
+.icons .heart:hover{
+  color: #e6c50fc9;
+  margin-right: .5em;
+}

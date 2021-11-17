@@ -1,8 +1,4 @@
 
-.container{
-  border: 9px solid red;
-
-}
 .new-tweet {
   display: flex;
   flex-wrap: wrap;
