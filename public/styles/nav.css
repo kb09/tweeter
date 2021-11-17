@@ -1,8 +1,11 @@
 nav{
   height: 120px;
   background-color: #4056A1 ;
-  width:100vw;
+  width:100%;
   color:#FFFFFF ;  
+  border: 2px solid brown;
+  position: fixed;
+  top: 0;
 }
 
 #navID { 
