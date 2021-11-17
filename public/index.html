@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="/styles/nav.css"    type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
     
 
     <!-- External JS -->
@@ -50,12 +50,14 @@
       <div id="name">
           <h2><span>Kartik Bakshi</span></h2>
       </div>
-  </header>
+    </header>
 
     <!-- Page-specific (main) content here -->
     <!-- Add the Form to the page -->
     <main class="container">
+
       <section class="new-tweet">
+        
         <h2 id="compose-text">Compose Tweet</h2>
 
         <form action="/tweets" method="post">
@@ -68,6 +70,30 @@
         </form>
 
       </section>
+      
+      <!-- section that will serve as a container for all the tweets -->
+     
+      <section class = "all-tweets">
+        <article>
+
+          <header>
+            <div class="profile"><img src="/images/profile-hex.png"> </div>
+            <div class="username">Newton</div>
+            <div class="userid">@SirIsaac</div>
+          </header>
+
+          <main class='tweet-info'>
+            I have seen further by standing on the shoulder of giants
+          </main>
+
+          <footer>
+            <div class="timestamp">10 days ago</div>
+          </footer>
+
+        </article>
+
+      </section>
+      </div>
 
     </main>
   </body>
