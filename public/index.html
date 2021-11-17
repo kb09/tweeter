@@ -21,13 +21,17 @@
     <link rel="stylesheet" href="/styles/nav.css"    type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <!-- counter -->
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
   </head>
 
   <body>
@@ -53,8 +57,8 @@
     <main class="container">
       <section class="new-tweet">
         <h2 id="compose-text">Compose Tweet</h2>
+
         <form action="/tweets" method="post">
-          
           <label id="humming" for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
           <div class ="submit-and-display">
@@ -62,6 +66,7 @@
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
+
       </section>
 
     </main>
