@@ -5,7 +5,9 @@ position: absolute;
  margin-top: 9em;
  width: 90%;
  margin-bottom: 2em;
- 
+ border: 2px solid black;
+ border-width: 90%;
+ margin-left: 4em;
 }
 
 .all-tweets header {
@@ -53,6 +55,7 @@ position: absolute;
   font-size: medium;
   padding-left: 65em;
   margin-top: -1.6em;
+  margin-bottom: 1em;
   display: flex;
   justify-content: space-between;
 
@@ -60,25 +63,25 @@ position: absolute;
 }
 .icons .flag{
   color: #3550e6;
-  margin-right: .5em;
+  margin-right: 1em;
 }
 .icons .retweet{
   color: #3550e6;
-  margin-right: .5em;
+  margin-right: 1em;
 }
 .icons .heart{
   color: #3550e6;
-  margin-right: .5em;
+  margin-right: 1em;
 }
 .icons .flag:hover{
   color: #e6c50fc9;
-  margin-right: .5em;
+  margin-right: 1em;
 }
 .icons .retweet:hover{
   color: #e6c50fc9;
-  margin-right: .5em;
+  margin-right: 1em;
 }
 .icons .heart:hover{
   color: #e6c50fc9;
-  margin-right: .5em;
+  margin-right: 1em;
 }
