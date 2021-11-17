@@ -49,5 +49,8 @@ textarea {
   font-size: medium;
   font-family: 'Bungee';
   font-weight: bold;
+}
 
+.negative-count{
+  color:red;
 }
