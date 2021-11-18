@@ -36,74 +36,50 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
-      <span id="navID">tweeter</span>
-      <span id="newTweet"> <b> Write </b> a new tweet  </span>
-      <i id ="navArrow" class="fas fa-angle-double-down"></i>
+     <nav class="navbar">
+      <div> 
+        <span class="logo">TWEETER</span> 
+      </div>
+      <footer>     
+        <button class='write'>
+          <span><b>Write</b> a new tweet</span>
+          <i class="fas fa-angle-double-down"></i>
+        </button>
+      </footer>
     </nav>
     <!-- Adding Header  -->
-    <header class="header">
+    <header class="head">
       <div>
-          <img src="/images/profile-hex.png"> 
+        <img src="/images/profile-hex.png"> 
       </div>
-      <br>
-      <div id="name">
-          <h2><span>Kartik Bakshi</span></h2>
+      <div class="name">
+        <span>Kartik Bakshi</span>
       </div>
     </header>
 
     <!-- Page-specific (main) content here -->
     <!-- Add the Form to the page -->
     <main class="container">
-
       <section class="new-tweet">
+        <div class="error-message">
+        </div>
 
-        <h2 id="compose-text">Compose Tweet</h2>
-
-        <form action="/tweets" method="post">
-          <label id="humming" for="tweet-text">What are you humming about?</label>
+          <form action="/tweets" method="POST">
+          <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
-          <div class ="submit-and-display">
+          <div class="submit-and-display">
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
-        </form>
-
+          </form>
       </section>
+
+      <section class="tweet-container">
+      </section>
+
       
-      <!-- section that will serve as a container for all the tweets -->
-     
-      <section class = "all-tweets">
-       <!-- <article>
-
-          <header>
-            <div class="pic"> <img src="/images/profile-hex.png"> </div>
-            <div class="name">Newton</div>
-            <div class="userName">@SirIsaac</div>
-          </header>
-
-          <main class='tweet-info'>
-            I have seen further by standing on the shoulder of giants
-          </main>
-
-          <footer>
-            <div class="timestamp">10 days ago</div>
-            
-            <div class="icons">
-
-             <span class="flag">  <i class="fas fa-flag"></i>  </span>
-             <span class="retweet"> <i class="fas fa-retweet"></i> </span>
-             <span class="heart"> <i class="fas fa-heart"></i> </span>
-
-            </div>
-
-          </footer>
-
-        </article> -->
-
-      </section>
+        </button>
       </div>
-
     </main>
   </body>
 </html>
