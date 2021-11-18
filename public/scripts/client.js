@@ -4,78 +4,110 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-const createTweetElement = function(tweet)  {
+const createTweetElement = function (tweetInfo)  {
   //responsible for returning a tweet <article>
   //Must contain entire HTML structure of the tweet
-  const newTweet = 
+  const newTweet =
   `
   <article>
-
-  <header class="tweetHeader">
-  
+    <header class="tweetHeader">
+      <div>
+        <img src=${tweetInfo.user.avatars}/>
+        <span>${tweetInfo.user.name}</span>
+      </div>
+      <div>
+        <span>${tweetInfo.user.handle}</span>
+      </div>
+    </header>
     <div>
-      <img src=${tweet.user.avatars}/>
-      <span><br>${tweet.user.name}</span>
+      <span>${escape(tweetInfo.content.text)}</span>
     </div>
-    <div>
-      <span>${tweet.user.handle}</span>
-    </div>
-  </header>
-    <div>
-      <span> ${tweet.content.text}</span>
-    </div>
-  <footer class="tweetFooter">
-  <br>
-    <div>
-      <span>${tweet.created_at}</span>
-    </div>
-    
-    <div class="tweetLogo"> 
-    
-      <span class="flag">  <i class="fas fa-flag"></i>  </span>
-      <span class="retweet"> <i class="fas fa-retweet"></i> </span>
-      <span class="heart"> <i class="fas fa-heart"></i> </span>
-
-    </div>
-  </footer>
+    <footer class="tweetFooter">
+      <div>
+        <span>${moment(tweetInfo.created_at).fromNow()}</span>
+      </div>
+      <div class="tweet-reactions"> 
+        <span><i class="fas fa-flag"></i> <i class="fas fa-retweet"></i> <i class="fas fa-heart"></i></span>
+      </div>
+    </footer>
   </article>
   `
   return newTweet;
-}
+};
 
-const renderTweets = function(tweetData) {
-  for (obj of tweetData) {
-    $('.all-tweets').append(createTweetElement(obj))
+const renderTweets = arrayOftweetInfo => {
+  for (let obj of arrayOftweetInfo) {
+    $('.tweet-container').prepend(createTweetElement(obj));
   }
-}
+};
 
-const ajaxPost = function (url, data, callback) {
+const renderLastTweet = arrayOftweetInfo => {
+  const lastTweet = arrayOftweetInfo[arrayOftweetInfo.length - 1];
+  $('.tweet-container').prepend(createTweetElement(lastTweet));
+};
+
+const ajaxPost = (url, data, callback) => {
   $.post(url, data, callback);
-}
+};
 
-
-const getTextLength = function(inputString) {
-  let text = ''; 
-  for (index in inputString) {
-    if (index > 5) {
-      text += inputString[index];
+const getText = queryString => {
+  let text = '';
+  for (let index in queryString) {
+    if (index > 4) {
+      text += queryString[index];
     }
   }
-  return text.replace(/%20/g, " ").length;
-}
+  return decodeURIComponent(text);
+};
+
+const resetErrorMessage = violation => {
+
+  if (violation === 'empty') {
+    $(".error-message").hide();
+    $(".error-message").empty();
+    $(".error-message").append("<p>Please add some text!</p>");
+    $(".error-message").slideDown("slow");
+    $('textarea').focus();
+  } else if (violation === 'over count') {
+    $(".error-message").hide();
+    $(".error-message").empty();
+    $(".error-message").append("<p>Exceeds character count!</p>");
+    $(".error-message").slideDown("slow");
+    $('textarea').focus();
+  } else {
+    $(".error-message").hide();
+    $(".error-message").empty();
+    $('textarea').focus();
+  }
+};
 
 $(document).ready(function() {
-  const loadtweets = $.get('/tweets', function(data) {
-      renderTweets(data);
-  })
+  $.get('/tweets', renderTweets);
 
-  
-  $('button').click(function(event) {
+  $('.write').click(function(event) {
+    $('textarea').focus();
+  });
+  $('.submit-and-display button').click(function(event) {
     event.preventDefault();
-    const data = $('form').serialize()
-    console.log(getTextLength(data));
+    const data = $('form').serialize();
+    const dataLength = getText(data).length;
 
-    const dataToPost = ajaxPost('/tweets', data, function() {
-    })
-  })
-})
+    if (dataLength > 140) {
+      resetErrorMessage('over count');
+    } else if (dataLength === 0) {
+      resetErrorMessage('empty');
+    } else {
+      resetErrorMessage();
+      ajaxPost('/tweets', data, function() {
+        $.get('/tweets', renderLastTweet);
+        $('textarea').val("");
+      });
+      $(this)
+        .closest(".new-tweet")
+        .find(".counter")
+        .removeClass("negative-count")
+        .text(140);
+    }
+  });
+});
+
