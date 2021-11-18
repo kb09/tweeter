@@ -1,35 +1,57 @@
-nav{
-  height: 120px;
-  background-color: #4056A1 ;
-  width:100%;
-  color:#FFFFFF ;  
-  position: sticky;
+.navbar{
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
   top: 0;
+  background-color: #4056A1;
+  width:100%;
+  height: 120px;
+  color:#FFFFFF ;  
 }
 
-#navID { 
-  display: inline-flex;
-  height: 60px;
-  margin-top: 1.5em;
-  margin-left:1.5em;
-  font-family:"Bungee";
+/* write a new tweet logo */
+.navbar footer .write span {
+  background-color:transparent;
+  border: none;
+  outline: none;
+  border: 3px dotted black;
 }
 
-#navArrow {
-  position: relative;
-  color: #ff0000;
-  margin-top: 3.2em; 
-  float: right;
-  margin-right: -7em;
-  margin-top: 3em;
+/* disigning "write" for write a new tweet */
+.navbar footer .write span b {
+  color: #792727;
+  font-size: larger;
+  padding-right:4px;
 }
 
-#newTweet{
-  position: relative;
-  float: right;
-  margin-left: 3em;
-  margin-top: 1.5em;
-  padding-right: 1em;
-  font-family:"Source Sans Pro", sans-serif;
+.logo {
+  font-family: "Bungee";
+  color: #ffffff;
+  font-size: xx-large;
+  margin: 1.5em;
 }
+
+.navbar footer .write {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5em;
+  padding-top: 1em;
+  font-size:large;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: transparent;
+}
+
+
+/* double arrows */
+.navbar footer .fas {
+  font-size: 1.8em;
+  color: #792727;
+  font-size: 1.8em;
+}
+
 
