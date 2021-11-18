@@ -1,57 +1,63 @@
 
 .new-tweet {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
-  margin-left: 6em;
+  width: 90%;
+  flex-wrap: wrap;
   font-weight: bold;
-  padding-bottom: 1em;
- 
+  margin: 0.5em;
+
+  border: 3px solid red;
   
 }
 
-#compose-text{
-  font-weight: bold;
-  margin-top: .2em;
-}
-
-#humming {
-  font-weight: bold;
-  color: black;
-  font-family: "Source Sans Pro", sans-serif;
-
-}
+/* tweet button to post tweets */
 
 .submit-and-display button {
-  font-size: large;
-  font-family: "Bungee";
-  background-color:#0000ff;
+  border: none;
   color: #ffffff;
+  font-family: "Bungee";
+  font-size: medium;
+  /* background-color:#0000ff; */
+  background-color:#792727;  
+
 }
 
+/* input of tweets */
 textarea {
-  display: block;
-  border: none;
-  border-bottom: solid #000000;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1em;
-  font-weight: 200; 
-  height: 35px;
+  display: block;
+  outline: none;
+  border: none;
+  border-bottom: solid black;
+  background-color: #f4f1ec;
+  margin-top: .5em;
+  resize: none;
+  height: 1.5em;
   width: 100%;
-  background-color:#f4f1ec;
+  overflow: hidden;
+ 
+
 }
 
 .submit-and-display {
   display: flex;
   justify-content: space-between;
-  margin-top: 1em;
-  font-size: medium;
   font-family: 'Bungee';
-  font-weight: bold;
+  margin-top: .5em;
+  font-size: medium;
+  border: 3px dotted black;
+  
+
+
 }
 
+/* if character count exceeds 140 */
 .negative-count{
   color:#ff0000;
 }
+
+
+
