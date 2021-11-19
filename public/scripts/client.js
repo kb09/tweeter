@@ -117,3 +117,9 @@ $(document).ready(function() {
   });
 });
 
+// escape function for writing tweet 
+const escape = function(str) {
+  let div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
