@@ -1,52 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-      <!-- cdnjs.com-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <!-- Meta Information -->
-    <!--     end of cdnjs.com-->
-    
+    <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
 
-    <!-- Importing different fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;1,300;1,600&display=swap" rel="stylesheet">
-
-    
+    <!-- Get the special fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
+   
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/nav.css"    type="text/css" />
-    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
-    
+
+    <!-- Nav CSS -->
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css"/>
+
+    <!-- Header CSS -->
+    <link rel="stylesheet" href="/styles/header.css" type="text/css"/>
+
+    <!-- CDN moment.js to help with displaying the time -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js" ></script>
+
+    <!-- New Tweets -->
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css"/>
+
+    <!--Tweets-->
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css"/>
+
+    <!--Error Message-->
+    <link rel="stylesheet" href="/styles/error-message.css" type="text/css"/>
+
+    <!--Tweet Icons & Toggle Buttons-->
+    <script src="https://kit.fontawesome.com/a4c9bc2fa3.js" crossorigin="anonymous"></script>
+
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="dist/timeago.js" type="text/javascript"></script>
+
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
-    <!-- counter -->
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-    
+  
+     <!-- Helper functions JS -->
+     <script type="text/javascript" src="/scripts/helpers.js"></script>
+  
+    <!-- Character count JS -->
+    <script type="text/javascript" src=/scripts/composer-char-counter.js></script>
+  
+    <!-- Prevents the 'zooming out' of the webpage as the dimensions get smaller -->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
   </head>
 
   <body>
-    <!-- Top nav bar (fixed) -->
+    <!-- navbar -->
      <nav class="navbar">
       <div> 
         <span class="logo">TWEETER</span> 
       </div>
+
       <footer>     
         <button class='write'>
+          
           <span><b>Write</b> a new tweet</span>
           <i class="fas fa-angle-double-down"></i>
         </button>
       </footer>
+
     </nav>
+
     <!-- Adding Header  -->
     <header class="head">
       <div>
@@ -57,8 +78,9 @@
       </div>
     </header>
 
+
     <!-- Page-specific (main) content here -->
-    <!-- Add the Form to the page -->
+    
     <main class="container">
       <section class="new-tweet">
         <div class="error-message">
@@ -76,9 +98,7 @@
 
       <section class="tweet-container">
       </section>
-
-      
-        </button>
+    
       </div>
     </main>
   </body>

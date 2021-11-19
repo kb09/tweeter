@@ -4,13 +4,13 @@
   margin-top: .5em;
   display: flex;
   justify-content: space-between;
-  border: 3px solid pink;
 }
 
  /* tweet reactions and hover*/
 
 .tweet-reactions{
   margin-left: .5em;
+  padding-bottom: .4em;
 }
 .tweet-reactions #flag{
   color: #5b6dd6;
@@ -55,3 +55,18 @@ article #info span{
   padding-bottom: 1em;  
 }
 
+@media only screen and (min-width:1024px) {
+  .container {
+    width: 70%;
+    padding: 0;
+  }
+
+  .container .tweet-container article {
+    border: solid;
+  }
+
+  .tweet-container{
+    width: 90%;
+  }
+}
+    /* Might have to add the rest of it from there  */

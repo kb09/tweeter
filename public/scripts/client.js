@@ -16,18 +16,24 @@ const createTweetElement = function (tweetInfo)  {
         <span>${tweetInfo.user.name}</span>
       </div>
       <div>
-        <span>${tweetInfo.user.handle}</span>
+        <span class="handle">${tweetInfo.user.handle}</span>
       </div>
     </header>
-    <div>
+    <div id="info">
       <span>${escape(tweetInfo.content.text)}</span>
     </div>
     <footer class="tweetFooter">
       <div>
-        <span>${moment(tweetInfo.created_at).fromNow()}</span>
+        <span class="timeStamp">${moment(tweetInfo.created_at).fromNow()}</span>
       </div>
       <div class="tweet-reactions"> 
-        <span><i class="fas fa-flag"></i> <i class="fas fa-retweet"></i> <i class="fas fa-heart"></i></span>
+
+        <span>
+        <i id="flag" class="fas fa-flag"></i> 
+        <i id= "retweet" class="fas fa-retweet"></i> 
+        <i  id="heart" class="fas fa-heart"></i>
+        </span>
+
       </div>
     </footer>
   </article>

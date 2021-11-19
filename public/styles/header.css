@@ -1,17 +1,27 @@
-.header {
+.head{
   display: flex;
   height: 400px;
-  background-image: url(http://www.transparenttextures.com/patterns/foggy-birds.png);
-  background-color: thistle;
+  width: 100%;
   justify-content: center;
+  background-image: url(http://www.transparenttextures.com/patterns/foggy-birds.png);
+  background-color: #d8bfd8;
   flex-flow: column wrap;
   align-items: center;
-  width: 100%
 }
 
-#name {
-  color: black;
+/* name */
+.head .name span {
+  color: rgb(2, 2, 2);
   font-weight: 200;
-
+ 
 }
 
+@media only screen and (min-width:1024px){
+  .hedar{
+    width: 500px;
+    margin-top: 1em;
+    margin-left: 2em;
+  }
+}
+
+    /* Might have to add the rest of it from there  */

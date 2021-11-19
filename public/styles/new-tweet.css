@@ -6,9 +6,8 @@
   width: 90%;
   flex-wrap: wrap;
   font-weight: bold;
-  margin: 0.5em;
-
-  border: 3px solid red;
+  margin: 0.5em;    
+  margin-left: 1.5em;
   
 }
 
@@ -19,7 +18,6 @@
   color: #ffffff;
   font-family: "Bungee";
   font-size: medium;
-  /* background-color:#0000ff; */
   background-color:#792727;  
 
 }
@@ -38,7 +36,6 @@ textarea {
   height: 1.5em;
   width: 100%;
   overflow: hidden;
- 
 
 }
 
@@ -48,16 +45,18 @@ textarea {
   font-family: 'Bungee';
   margin-top: .5em;
   font-size: medium;
-  border: 3px dotted black;
-  
-
 
 }
 
 /* if character count exceeds 140 */
 .negative-count{
   color:#ff0000;
+
 }
 
-
-
+@media only screen and (min-width:1024px) {
+  .new-tweet {
+    width: 90%;
+    /* might have to add more to it */
+  }
+}

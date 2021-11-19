@@ -15,7 +15,7 @@
   background-color:transparent;
   border: none;
   outline: none;
-  border: 3px dotted black;
+  
 }
 
 /* disigning "write" for write a new tweet */
@@ -23,6 +23,7 @@
   color: #792727;
   font-size: larger;
   padding-right:4px;
+  
 }
 
 .logo {
@@ -52,6 +53,27 @@
   font-size: 1.8em;
   color: #792727;
   font-size: 1.8em;
+}
+
+@media only screen and (max-width:1024px) {
+  .navbar {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  background-color: #4056A1;
+  background-image: url(http://www.transparenttextures.com/patterns/foggy-birds.png);
+  width:100%;
+  height: 120px;
+  color:#FFFFFF;  
+  }
+
+  .navbar footer .write {
+    background-color:  #4056A1;
+    background-image: none;
+    /* Might have to add the rest of it from there  */
+  }
 }
 
 
