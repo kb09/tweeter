@@ -55,8 +55,34 @@ article {
   font-family: "Source Sans Pro", "sans-serif"; 
 }
 
+/* stretch scroll button  */
 
-@media only screen and (min-width:1024px) {
+body::-webkit-scrollbar {
+  display: none;
+}
+.scrollButton button {
+  
+  display: none;
+  position: fixed;
+  bottom: 2em;
+  right: 3.5em;
+  border: none;
+  background-color: #792727;
+  
+  padding: .5em;
+  border-radius: 40%;
+}
+
+.scrollButton button:hover {
+  box-shadow: 5px 5px #c29696;
+}
+
+.scrollButton button .fas {
+  color: white;
+}
+
+
+/* @media only screen and (max-width:1024px) {
   body {
     display: flex;
     align-content: space-around;
@@ -68,5 +94,5 @@ article {
     object-fit: fill;
     margin-right: 2em;
   }
-}
+} */
 

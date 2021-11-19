@@ -116,7 +116,7 @@ $(document).ready(function() {
     }
   });
 
-  // toggle write new tweetbutton
+  // stretch toggle button
   $('.write').click(function(event) {
     $('.new-tweet').slideToggle('slow');
     $('textarea').focus();

@@ -19,5 +19,30 @@ $(document).ready(function() {
         .addClass("negative-count")
         .text(140 - count);
     }
-  })
-})
+  });
+
+  /* stretch sceoll button  */
+
+  // toggle button for getting to the top of the screen
+ const buttonToTriggerScroll = '.scrollButton button';
+ $(window).scroll(function() {
+   if ($(this).scrollTop() > 40) {
+     $(buttonToTriggerScroll).fadeIn();
+   } else {
+     $(buttonToTriggerScroll).fadeOut();
+   }
+ });
+  // click to top 
+ $(buttonToTriggerScroll).click(function() {
+   $(window).scrollTop(0);
+   if ($('.new-tweet').is(':hidden')) {
+     $('.new-tweet').show();
+   }
+   $('textarea').focus();
+ });
+  
+});
+
+ 
+
+

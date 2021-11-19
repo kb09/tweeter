@@ -55,7 +55,13 @@ article #info span{
   padding-bottom: 1em;  
 }
 
-@media only screen and (min-width:1024px) {
+/* box-shadow */
+article:hover{
+  box-shadow: .5em .5em;
+  color: #ce6c6c;
+}
+
+/* @media only screen and (max-width:1024px) {
   .container {
     width: 70%;
     padding: 0;
@@ -68,5 +74,5 @@ article #info span{
   .tweet-container{
     width: 90%;
   }
-}
+} */
     /* Might have to add the rest of it from there  */

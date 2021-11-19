@@ -54,9 +54,9 @@ textarea {
 
 }
 
-@media only screen and (min-width:1024px) {
+ /* @media only screen and (max-width:1024pxx) {
   .new-tweet {
     width: 90%;
-    /* might have to add more to it */
+    
   }
-}
+}  */
