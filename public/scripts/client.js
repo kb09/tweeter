@@ -115,9 +115,17 @@ $(document).ready(function() {
         .text(140);
     }
   });
+
+  // toggle write new tweetbutton
+  $('.write').click(function(event) {
+    $('.new-tweet').slideToggle('slow');
+    $('textarea').focus();
+  });
+
+
 });
 
-// escape function for writing tweet 
+// escape function for writing tweets 
 const escape = function(str) {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
