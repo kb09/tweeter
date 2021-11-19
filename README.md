@@ -23,10 +23,13 @@ Create your own tweets to be displayed with a randomly generated avatar that has
 - timeago.js
 
 
-src="https://user-images.githubusercontent.com/29681554/142566025-494c310b-e6aa-4589-a176-371ffc8bb1c6.png">
+<img width="1436" alt="Screen Shot 2021-11-18 at 11 26 33 PM" src="https://user-images.githubusercontent.com/29681554/142566025-494c310b-e6aa-4589-a176-371ffc8bb1c6.png">
 
-src="https://user-images.githubusercontent.com/29681554/142566033-3dc99902-c718-46bc-b7d2-f312d380bfaa.png">
+<img width="1434" alt="Screen Shot 2021-11-18 at 11 29 20 PM" src="https://user-images.githubusercontent.com/29681554/142566033-3dc99902-c718-46bc-b7d2-f312d380bfaa.png">
 
-src="https://user-images.githubusercontent.com/29681554/142566052-eacf490d-e1e1-4d62-b527-fc4cb43c926d.png">
+<img width="1435" alt="Screen Shot 2021-11-18 at 11 29 33 PM" src="https://user-images.githubusercontent.com/29681554/142566052-eacf490d-e1e1-4d62-b527-fc4cb43c926d.png">
 
-src="https://user-images.githubusercontent.com/29681554/142566059-766fb42a-15cf-4300-8c9e-17dcc00bc1d4.png">
+
+<img width="1434" alt="Screen Shot 2021-11-18 at 11 29 44 PM" src="https://user-images.githubusercontent.com/29681554/142566059-766fb42a-15cf-4300-8c9e-17dcc00bc1d4.png">
+
+
