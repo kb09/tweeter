@@ -1,87 +1,57 @@
-
-.all-tweets{
-position: absolute;
- align-items: center;
- margin-top: 9em;
- width: 90%;
- margin-bottom: 2em;
- border: 2px solid black;
- border-width: 90%;
- margin-left: 4em;
-}
-
-.all-tweets header {
- display: flex;
-  
- font-size: 20px;
- margin: 0.5em; 
-}
-
-.all-tweets .name{
-  padding-left: 0 em;
-  color: #000000;
-  margin-top: 5em;
-}
-
-.all-tweets .userName{
-  float: right;
-  color: #e969a9;;
-  margin-top: 0em;
-  margin-left: 42em;
-
-}
-
-.all-tweets footer {
-  border-top: 2px solid #000000;
-  border-width: 70%;
-  margin-left: 4em;
-} 
-
-.tweet-info{
-  margin-left: 6.5em;
-  padding-bottom: 1em;
-  }
-
-.timestamp{
-  display: flex;
-  margin-left: 5em;
-  font-size: small;
-  margin-top: 1em;
-  padding-bottom: 1em;
-  
-}
-
-.icons{
-  font-size: medium;
-  padding-left: 65em;
-  margin-top: -1.6em;
-  margin-bottom: 1em;
+.tweetHeader {
+  font-size: 20px;
+  margin: 0.5em;
+  margin-top: .5em;
   display: flex;
   justify-content: space-between;
+  border: 3px solid pink;
+}
 
-  
+ /* tweet reactions and hover*/
+
+.tweet-reactions{
+  margin-left: .5em;
 }
-.icons .flag{
-  color: #3550e6;
-  margin-right: 1em;
+.tweet-reactions #flag{
+  color: #5b6dd6;
+  margin-right: .5em;
 }
-.icons .retweet{
-  color: #3550e6;
-  margin-right: 1em;
+.tweet-reactions #retweet{
+  color: #5b6dd6;
+  margin-right: .5em;
 }
-.icons .heart{
-  color: #3550e6;
-  margin-right: 1em;
+.tweet-reactions #heart{
+  color: #5b6dd6;
+  margin-right: .5em;
 }
-.icons .flag:hover{
+.tweet-reactions #flag:hover{
   color: #e6c50fc9;
-  margin-right: 1em;
+  margin-right: .5em;
 }
-.icons .retweet:hover{
+.tweet-reactions #retweet:hover{
   color: #e6c50fc9;
-  margin-right: 1em;
+  margin-right: .5em;
 }
-.icons .heart:hover{
+.tweet-reactions #heart:hover{
   color: #e6c50fc9;
-  margin-right: 1em;
+  margin-right: .5em;
 }
+
+/* tweet info placement */
+article #info span{
+  display: block;
+  margin-left: 1em;
+}
+
+
+/* time stamp */
+.timeStamp{
+  display: flex;
+  align-items: flex-start;
+  margin-left:.5em;
+  font-size: large;
+  font-weight: bold;
+  margin-top: 1em;
+  padding-bottom: 1em;  
+}
+
