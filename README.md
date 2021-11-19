@@ -14,5 +14,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Dependencies
 
+-body-parser
+-md5
+-chance
+-timeago.js
 - Express
 - Node 5.10.x or above
